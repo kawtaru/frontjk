@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-author-reactjs-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ai-author-reactjs
+  template:
+    metadata:
+      labels:
+        app: ai-author-reactjs
+    spec:
+      containers:
+      - name: ai-author-reactjs
+        image: ai_author_project-frontend:latest
+        ports:
+        - containerPort: 3000

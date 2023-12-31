@@ -1,0 +1,17 @@
+---
+- name: Deploy AI Author ReactJS
+  hosts: your_kubernetes_master_node
+  become: true
+
+  tasks:
+    - name: Deploy Frontend
+      k8s:
+        definition: ./path/to/frontend-deployment.yaml
+        kubeconfig: ~/.kube/config
+      become: true
+
+    - name: Deploy Frontend Service
+      k8s:
+        definition: ./path/to/frontend-service.yaml
+        kubeconfig: ~/.kube/config
+      become: true
