@@ -1,6 +1,7 @@
 - hosts: all
   become: true
   become_user: root
+  remote_user: ubuntu
   tasks:
     - name: delete old deployment
       command: kubectl delete -f /home/ubuntu/frontend-deployment.yml --kubeconfig=/home/ubuntu/.kube/config
