@@ -9,7 +9,7 @@ import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 const navigation = () => {
   return [
     {
-      title: 'Generate Review2',
+      title: 'Generate Review',
       icon: RateReviewOutlinedIcon,
       path: '/review'
     },
