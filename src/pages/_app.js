@@ -64,7 +64,7 @@ const App = props => {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>AI Author2</title>
+        <title>AI Author</title>
         <meta name='description' content={`Text Checker open AI`} />
       </Head>
 
